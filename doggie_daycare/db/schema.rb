@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150518134717) do
 
-  create_table "dogs", force: :cascade do |t|
+  create_table "dog", force: :cascade do |t|
     t.string   "name"
     t.string   "breed"
     t.integer  "age"
@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20150518134717) do
     t.integer  "owner_id"
   end
 
-  add_index "dogs", ["owner_id"], name: "index_dogs_on_owner_id"
+  add_index "dog", ["owner_id"], name: "index_dog_on_owner_id"
 
-  create_table "owners", force: :cascade do |t|
+  create_table "owner", force: :cascade do |t|
     t.string   "name"
     t.string   "phone"
     t.datetime "created_at", null: false

@@ -11,8 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
+  <div class="field form_group">
+    <%= f.label :name, class: "form_control", placeholder: "Dog name" %><br> <!-- this did not work quite right -->
     <%= f.text_field :name %>
   </div>
   <div class="field">
